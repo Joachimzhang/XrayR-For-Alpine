@@ -61,7 +61,7 @@ install_xrayr() {
     cd /etc
 
     # 开始下载XrayR，先检测版本，再创建目录，再进行安装
-    last_version=$(curl -Ls "https://api.github.com/repos/XrayR-project/XrayR/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+    last_version=$(curl -Ls "https://api.github.com/repos/wyx2685/XrayR/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
     if [ -z "$last_version" ]; then
         echo "检测 XrayR 版本失败，请稍后再试"
         exit 1
@@ -69,7 +69,7 @@ install_xrayr() {
 
     mkdir XrayR
     cd XrayR
-    wget -N --no-check-certificate "https://github.com/XrayR-project/XrayR/releases/download/${last_version}/XrayR-linux-64.zip"
+    wget -N --no-check-certificate "https://github.com/wyx2685/XrayR/releases/download/${last_version}/XrayR-linux-64.zip"
     unzip XrayR-linux-64.zip
     chmod 777 XrayR
 

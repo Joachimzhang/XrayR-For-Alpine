@@ -12,12 +12,12 @@
 基于screen保活方案的一键脚本
 
 ```shell script
-apk add wget ; wget -O /usr/bin/xrayr https://raw.githubusercontent.com/mingge9527/XrayR-For-Alpine/main/xrayr.sh ; chmod 777 /usr/bin/xrayr ; xrayr
+apk add wget ; wget -O /usr/bin/xrayr https://raw.githubusercontent.com/Joachimzhang/XrayR-For-Alpine/main/xrayr.sh ; chmod 777 /usr/bin/xrayr ; xrayr
 ```
 基于openrc保活方案的一键脚本
 
 ```shell script
-apk add wget ; wget -O /usr/bin/xrayr https://raw.githubusercontent.com/mingge9527/XrayR-For-Alpine/openrc/xrayr.sh ; chmod 777 /usr/bin/xrayr ; xrayr
+apk add wget ; wget -O /usr/bin/xrayr https://raw.githubusercontent.com/Joachimzhang/XrayR-For-Alpine/openrc/xrayr.sh ; chmod 777 /usr/bin/xrayr ; xrayr
 ```
 下次运行即可直接输入
 ```shell script
